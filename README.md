@@ -1,0 +1,18 @@
+- Selenium Script:
+    - Imported necessary libraries to write the script.
+    - Set the URL and create the webdriver which work as a tool to move around and select required class and scrape the data from the web.
+    - Initialize the loop, apply the necessary conditions and iterate.
+    - Scroll down the webpage until 2000 elements are loaded and break the loop.
+    - Store all 2000 elements into list name **`html_list.`**
+    - Quit the driver.
+- BeautifulSoup Script:
+    - Parse the html string using the BeautifulSoup.
+    - Write a prettified html to a file.
+    - Defines two functions **`text_extractor`**and **`string_extractor`**which extract text data from HTML elements using BeautifulSoup.
+    - Create a dictionary name **`classes`** for each child elements.
+    - Loop through the html file and extract data from each file, which is 167 html file.
+    - Loop through the classes dictionary and extract data from each class.
+    - Loop through the matched elements and extract the data using the extraction function defined in the classes dictionary.
+- Pandas Script:
+    - Concatenate the data from all files into a single DataFrame
+    - Write the DataFrame to a CSV file
